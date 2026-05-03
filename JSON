@@ -1,0 +1,56 @@
+{
+  "name": "fitforge",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start"
+  },
+  "dependencies": {
+    "next": "14.2.3",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "lucide-react": "latest",
+    "recharts": "latest",
+    "zustand": "latest"
+  },
+  "devDependencies": {
+    "typescript": "5.4.5",
+    "@types/node": "20.12.7",
+    "@types/react": "18.2.79",
+    "@types/react-dom": "18.2.25",
+    "postcss": "8.4.38",
+    "tailwindcss": "3.4.3"
+  }
+}
+File 2 Name: src/app/page.tsx
+(Make sure you type that whole path into the name box!)
+
+TypeScript
+import React from 'react';
+
+export default function Home() {
+  return (
+    <div className="min-h-screen bg-[#020617] text-white p-6 md:p-12">
+      <nav className="flex justify-between items-center max-w-6xl mx-auto mb-16">
+        <h1 className="text-xl font-black italic">FITFORGE</h1>
+        <button className="bg-white text-black px-5 py-2 rounded-full text-sm font-bold">Get Started</button>
+      </nav>
+      <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-6">
+        <div className="bg-slate-900 border border-slate-800 p-8 rounded-3xl">
+          <p className="text-blue-400 text-xs font-bold mb-2">CALORIES</p>
+          <h3 className="text-4xl">1,840</h3>
+        </div>
+        <div className="bg-slate-900 border border-slate-800 p-8 rounded-3xl">
+          <p className="text-emerald-400 text-xs font-bold mb-2">WORKOUT</p>
+          <h3 className="text-3xl font-bold">PUSH DAY</h3>
+        </div>
+        <div className="bg-slate-900 border border-slate-800 p-8 rounded-3xl">
+          <p className="text-orange-500 text-xs font-bold mb-2">STREAK</p>
+          <h3 className="text-4xl">12 Days</h3>
+        </div>
+      </div>
+    </div>
+  );
+}
